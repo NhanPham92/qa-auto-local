@@ -29,6 +29,7 @@ public class LoginPage {
         find_element(driver, username).sendKeys(user);
         find_element(driver, password).sendKeys(pass);
         find_element(driver, loginBtn).click();
+        driver.navigate().back();
     }
 
 }

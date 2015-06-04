@@ -1,7 +1,6 @@
 *.class
-*.xml
 *.iml
-
+/.idea
 /target
 
 # Mobile Tools for Java (J2ME)

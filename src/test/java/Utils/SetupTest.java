@@ -16,7 +16,7 @@ public class SetupTest {
     @BeforeMethod
     public void setUp(){
         driver = new FirefoxDriver();
-        driver.get("http://the-internet.herokuapp.com/login");
+        driver.get("http://the-internet.herokuapp.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
