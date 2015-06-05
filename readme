@@ -1,0 +1,2 @@
+allure command should be: https://github.com/allure-framework/allure-cli/issues/16
+"bin/allure.bat" generate -v 1.4.1
