@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite Demo" verbose="1" >
+    <test name="The Internet Site Demo" >
+        <classes>
+            <class name="testcases.TestLoginPage" />
+            <class name="testcases.TestGeolocation"/>
+            <class name="testcases.TestBasicAuth"/>
+        </classes>
+    </test>
+</suite>
