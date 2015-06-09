@@ -31,4 +31,24 @@ public class HomePage {
     public void gotoGeolocationPage (WebDriver driver){
         find_element(driver, geoLocationRef).click();
     }
+
+    public void gotoABTesting(WebDriver driver) {
+        find_element(driver, geoLocationRef).click();
+    }
+
+    public void gotoCheckBoxesPage(WebDriver driver) {
+        find_element(driver, geoLocationRef).click();
+    }
+
+    public void gotoContextMenuPage(WebDriver driver) {
+        find_element(driver, geoLocationRef).click();
+    }
+
+    public void gotoDragAndDropPage(WebDriver driver) {
+        find_element(driver, geoLocationRef).click();
+    }
+
+    public void gotoDropDownPage(WebDriver driver) {
+        find_element(driver, geoLocationRef).click();
+    }
 }
