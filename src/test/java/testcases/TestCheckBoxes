@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.CheckBoxsPage;
 import pages.HomePage;
 
+import javax.xml.parsers.FactoryConfigurationError;
 import java.util.List;
 
 /**

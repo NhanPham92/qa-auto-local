@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 import static support.Helpers.find_element;
+import static support.Helpers.find_elements;
 
 /**
  * Created by namdo on 09/06/2015.
