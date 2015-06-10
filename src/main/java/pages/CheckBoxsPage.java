@@ -21,7 +21,7 @@ public class CheckBoxsPage {
     }
 
     public void select_checkBoxes (WebDriver driver) {
-        List<WebElement> listItem = (List<WebElement>) find_elements(driver, checkBoxes);
+        List<WebElement> listItem = find_elements(driver, checkBoxes);
         for (int i = 0; i < listItem.size(); i++) {
             listItem.get(i).click();
         }
