@@ -14,4 +14,9 @@ public class Helpers {
     public static WebElement find_element(WebDriver driver, By locator) {
         return driver.findElement(locator);
     }
+    
+    public static List<WebElement> find_elements(WebDriver driver, By locator){
+        return driver.findElements(locator);
+    }
+
 }
