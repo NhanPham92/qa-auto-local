@@ -9,7 +9,7 @@ import support.SetupTest;
 /**
  * Created by namdo on 08/06/2015.
  */
-public class TestContextMenu extends SetupTest{
+public class TestContextMenu extends SetupTest {
     @Test
     public void test_contextMenu() throws InterruptedException {
         HomePage homepage = new HomePage();

@@ -8,7 +8,7 @@ import support.SetupTest;
 /**
  * Created by namdo on 04/06/2015.
  */
-public class TestABTesting extends SetupTest{
+public class TestABTesting extends SetupTest {
     @Test
     public void test_ABTestingpage(){
         HomePage homepage = new HomePage();

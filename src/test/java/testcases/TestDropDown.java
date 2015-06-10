@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by namdo on 09/06/2015.
  */
-public class TestDropDown extends SetupTest{
+public class TestDropDown extends SetupTest {
     @Test
     public void test_dropDownList () throws InterruptedException {
         HomePage homePage = new HomePage();

@@ -10,7 +10,7 @@ import support.SetupTest;
 /**
  * Created by khanh.nguyen on 6/2/2015.
  */
-public class TestLoginPage extends SetupTest{
+public class TestLoginPage extends SetupTest {
     @DataProvider
     Object[][] getCredentials() {
         return new Object[][]{

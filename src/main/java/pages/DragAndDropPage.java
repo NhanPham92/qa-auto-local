@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
+import static support.Helpers.driver;
 import static support.Helpers.find_element;
-import static support.SetupTest.driver;
 
 /**
  * Created by namdo on 08/06/2015.

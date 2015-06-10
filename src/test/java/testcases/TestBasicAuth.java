@@ -8,7 +8,7 @@ import support.SetupTest;
 /**
  * Created by khanh.nguyen on 5/27/2015.
  */
-public class TestBasicAuth extends SetupTest{
+public class TestBasicAuth extends SetupTest {
     @Test
     public void test_BasicAuthPage(){
         HomePage homepage = new HomePage();

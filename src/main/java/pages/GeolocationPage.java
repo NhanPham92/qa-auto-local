@@ -2,8 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import static support.Helpers.driver;
 import static support.Helpers.find_element;
-import static support.SetupTest.driver;
 
 /**
  * Created by khanh.nguyen on 5/27/2015.
