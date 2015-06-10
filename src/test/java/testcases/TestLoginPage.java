@@ -1,11 +1,11 @@
 package testcases;
 
-import Utils.SetupTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+import support.SetupTest;
 
 /**
  * Created by khanh.nguyen on 6/2/2015.
@@ -22,11 +22,11 @@ public class TestLoginPage extends SetupTest{
     @Test(dataProvider =  "getCredentials")
     public void testLoginPage(String user, String pass){
         HomePage homepage = new HomePage();
-        Assert.assertEquals(homepage.homePageLoaded(driver), Boolean.TRUE);
-        homepage.gotoLoginPage(driver);
+        Assert.assertEquals(homepage.homePageLoaded(), Boolean.TRUE);
+        homepage.gotoLoginPage();
 
         LoginPage loginpage = new LoginPage();
-        Assert.assertEquals(loginpage.loginPageLoaded(driver), Boolean.TRUE);
-        loginpage.loginToLoginPage(driver, user, pass);
+        Assert.assertEquals(loginpage.loginPageLoaded(), Boolean.TRUE);
+        loginpage.loginToLoginPage(user, pass);
     }
 }

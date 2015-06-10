@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -16,18 +15,18 @@ public class DropDownPage {
     By dropDownText = By.xpath("//*[@id='content']/div/h3");
     By dropDownList = By.id("dropdown");
 
-    public Boolean checkDropDownPageLoaded (WebDriver driver){
-        return find_element(driver, dropDownText).getText().equals("Dropdown List");
+    public Boolean checkDropDownPageLoaded() {
+        return find_element(dropDownText).getText().equals("Dropdown List");
     }
 
-    public List<WebElement> get_defaultItem (WebDriver driver) {
-        Select select = new Select(find_element(driver, dropDownList));
+    public List<WebElement> get_defaultItem() {
+        Select select = new Select(find_element(dropDownList));
         List<WebElement> listItem = select.getOptions();
         return listItem;
     }
 
-    public void select_dropDownItems(WebDriver driver) throws InterruptedException {
-        Select select = new Select(find_element(driver, dropDownList));
+    public void select_dropDownItems() throws InterruptedException {
+        Select select = new Select(find_element(dropDownList));
         List<WebElement> listItem = select.getOptions();
         for(int i = 0; i < listItem.size(); i++){
             select.selectByIndex(i);

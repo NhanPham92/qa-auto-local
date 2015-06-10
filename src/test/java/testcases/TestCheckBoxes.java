@@ -1,11 +1,11 @@
 package testcases;
 
-import Utils.SetupTest;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CheckBoxsPage;
 import pages.HomePage;
+import support.SetupTest;
 
 import java.util.List;
 
@@ -16,15 +16,15 @@ public class TestCheckBoxes extends SetupTest {
     @Test
     public void test_checkBoxesPage() {
         HomePage homepage = new HomePage();
-        homepage.homePageLoaded(driver);
-        homepage.gotoCheckBoxesPage(driver);
+        homepage.homePageLoaded();
+        homepage.gotoCheckBoxesPage();
 
         CheckBoxsPage checkboxespage = new CheckBoxsPage();
-        checkboxespage.checkBoxesPageLoaded(driver);
-        List<WebElement> webElementList = checkboxespage.get_defaultCheckBox(driver);
+        checkboxespage.checkBoxesPageLoaded();
+        List<WebElement> webElementList = checkboxespage.get_defaultCheckBox();
         Assert.assertEquals(webElementList.get(0).isSelected(), false);
         Assert.assertEquals(webElementList.get(1).isSelected(), true);
-        checkboxespage.select_checkBoxes(driver);
+        checkboxespage.select_checkBoxes();
     }
 
 

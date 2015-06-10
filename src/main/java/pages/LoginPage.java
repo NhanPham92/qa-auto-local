@@ -1,9 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import static support.Helpers.find_element;
+import static support.SetupTest.driver;
 
 /**
  * Created by khanh.nguyen on 6/2/2015.
@@ -21,14 +21,14 @@ public class LoginPage {
     By password = By.id("password");
     By loginBtn = By.xpath("//*[@id='login']/button");
 
-    public Boolean loginPageLoaded(WebDriver driver){
-        return find_element(driver, loginPageTitle).getText().equals("Login Page");
+    public Boolean loginPageLoaded() {
+        return find_element(loginPageTitle).getText().equals("Login Page");
     }
 
-    public void loginToLoginPage(WebDriver driver, String user, String pass){
-        find_element(driver, username).sendKeys(user);
-        find_element(driver, password).sendKeys(pass);
-        find_element(driver, loginBtn).click();
+    public void loginToLoginPage(String user, String pass) {
+        find_element(username).sendKeys(user);
+        find_element(password).sendKeys(pass);
+        find_element(loginBtn).click();
         driver.navigate().back();
     }
 

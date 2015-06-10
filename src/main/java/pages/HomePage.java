@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import static support.Helpers.find_element;
 
@@ -24,35 +23,47 @@ public class HomePage {
     By fileDownLoadRef = By.xpath("//*[@id='content']/ul/li[13]/a");
 
 
-    public Boolean homePageLoaded (WebDriver driver){
-        return find_element(driver, homePageTitle).getText().equals(homePageTxt);
+    public Boolean homePageLoaded() {
+        return find_element(homePageTitle).getText().equals(homePageTxt);
     }
 
-    public void gotoLoginPage (WebDriver driver){
-        find_element(driver, loginPageRef).click();
+    public void gotoLoginPage() {
+        find_element(loginPageRef).click();
     }
 
-    public void gotoBasicAuthPage (WebDriver driver){
-        find_element(driver, basicAuthRef).click();
+    public void gotoBasicAuthPage() {
+        find_element(basicAuthRef).click();
     }
 
-    public void gotoGeolocationPage (WebDriver driver){
-        find_element(driver, geoLocationRef).click();
+    public void gotoGeolocationPage() {
+        find_element(geoLocationRef).click();
     }
 
-    public void gotoABTesting (WebDriver driver){
-        find_element(driver, abTestingRef).click();
+    public void gotoABTesting() {
+        find_element(abTestingRef).click();
             }
 
-    public void gotoBrokenImagespage (WebDriver driver) { find_element(driver, brokenImagesRef).click();}
+    public void gotoBrokenImagespage() {
+        find_element(brokenImagesRef).click();
+    }
 
-    public void gotoCheckBoxesPage (WebDriver driver) { find_element(driver, checkBoxsRef).click();}
+    public void gotoCheckBoxesPage() {
+        find_element(checkBoxsRef).click();
+    }
 
-    public void gotoContextMenuPage (WebDriver driver) { find_element(driver, contextMenuRef).click();}
+    public void gotoContextMenuPage() {
+        find_element(contextMenuRef).click();
+    }
 
-    public void gotoDragAndDropPage (WebDriver driver) { find_element(driver, draganddropRef).click();}
+    public void gotoDragAndDropPage() {
+        find_element(draganddropRef).click();
+    }
 
-    public void gotoDropDownPage (WebDriver driver) { find_element(driver, dropDrowRef).click(); }
+    public void gotoDropDownPage() {
+        find_element(dropDrowRef).click();
+    }
 
-    public void gotoFileDownLoadPage (WebDriver driver) { find_element(driver, fileDownLoadRef).click();}
+    public void gotoFileDownLoadPage() {
+        find_element(fileDownLoadRef).click();
+    }
 }
