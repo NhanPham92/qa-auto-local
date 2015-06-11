@@ -3,12 +3,12 @@
 <suite name="Test Suite Demo" verbose="1" >
     <test name="The Internet Site Demo" >
         <classes>
-            <class name="testcases.TestLoginPage" />
+            <!--<class name="testcases.TestLoginPage" />-->
             <class name="testcases.TestGeolocation"/>
-            <class name="testcases.TestBasicAuth"/>
+            <!--<class name="testcases.TestBasicAuth"/>-->
             <class name="testcases.TestABTesting"/>
-            <class name="testcases.TestCheckBoxes"/>
-            <class name="testcases.TestDragAndDrop"/>
+            <!--<class name="testcases.TestCheckBoxes"/>-->
+            <!--<class name="testcases.TestDragAndDrop"/>-->
             <class name="testcases.TestDropDown"/>
         </classes>
     </test>
