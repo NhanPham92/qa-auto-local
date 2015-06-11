@@ -1,7 +1,7 @@
 package testcases;
 
 import org.testng.annotations.Test;
-import pages.ABTesting;
+import pages.ABTestingPage;
 import pages.HomePage;
 import support.SetupTest;
 
@@ -15,7 +15,7 @@ public class TestABTesting extends SetupTest {
         homepage.homePageLoaded();
         homepage.gotoABTesting();
 
-        ABTesting abtesting = new ABTesting();
+        ABTestingPage abtesting = new ABTestingPage();
         abtesting.abTestingLoaded();
     }
 

@@ -7,7 +7,7 @@ import static support.Helpers.find_element;
 /**
  * Created by namdo on 04/06/2015.
  */
-public class ABTesting {
+public class ABTestingPage {
     By abText = By.xpath("//*[@id='content']/div/h3");
 
     public Boolean abTestingLoaded() {

@@ -1,5 +1,6 @@
 package pages;
 
+import objectdata.ObjectMap;
 import org.openqa.selenium.By;
 
 import static support.Helpers.find_element;
@@ -15,16 +16,14 @@ public class HomePage {
     By basicAuthRef = By.xpath("//*[@id='content']/ul/li[2]/a");
     By geoLocationRef = By.xpath("//*[@id='content']/ul/li[18]/a");
     By abTestingRef = By.xpath("//*[@id='content']/ul/li[1]/a");
-    By brokenImagesRef = By.xpath("//*[@id='content']/ul/li[3]/a");
     By checkBoxsRef = By.xpath("//*[@id='content']/ul/li[5]/a");
-    By contextMenuRef = By.xpath("//*[@id='content']/ul/li[6]/a");
     By draganddropRef = By.xpath("//*[@id='content']/ul/li[8]/a");
     By dropDrowRef = By.xpath(("//*[@id='content']/ul/li[9]/a"));
-    By fileDownLoadRef = By.xpath("//*[@id='content']/ul/li[13]/a");
 
+    ObjectMap objectMap = new ObjectMap();
 
     public Boolean homePageLoaded() {
-        return find_element(homePageTitle).getText().equals(homePageTxt);
+        return find_element(objectMap.getLocator("homepage.title")).getText().equals(homePageTxt);
     }
 
     public void gotoLoginPage() {
@@ -43,16 +42,8 @@ public class HomePage {
         find_element(abTestingRef).click();
             }
 
-    public void gotoBrokenImagespage() {
-        find_element(brokenImagesRef).click();
-    }
-
     public void gotoCheckBoxesPage() {
         find_element(checkBoxsRef).click();
-    }
-
-    public void gotoContextMenuPage() {
-        find_element(contextMenuRef).click();
     }
 
     public void gotoDragAndDropPage() {
@@ -63,7 +54,4 @@ public class HomePage {
         find_element(dropDrowRef).click();
     }
 
-    public void gotoFileDownLoadPage() {
-        find_element(fileDownLoadRef).click();
-    }
 }
