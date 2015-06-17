@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Properties;
 
 /**
@@ -16,10 +15,8 @@ public class ObjectMap {
     public ObjectMap() {
 
         prop = new Properties();
-        URL url = getClass().getResource("objectmap.properties");
-
         try {
-            FileInputStream fis = new FileInputStream(url.getPath());
+            FileInputStream fis = new FileInputStream("src/main/java/objectdata/objectmap.properties");
             prop.load(fis);
             fis.close();
         } catch (IOException e) {
