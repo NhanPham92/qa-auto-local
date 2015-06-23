@@ -8,8 +8,8 @@
             <class name="testcases.TestBasicAuth"/>
             <class name="testcases.TestABTesting"/>
             <class name="testcases.TestCheckBoxes"/>
-            <!--<class name="testcases.TestDragAndDrop"/>-->
-            <!--<class name="testcases.TestDropDown"/>-->
+            <class name="testcases.TestDragAndDrop"/>
+            <class name="testcases.TestDropDown"/>
         </classes>
     </test>
 </suite>
